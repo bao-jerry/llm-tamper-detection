@@ -78,7 +78,7 @@ The identification estimators converge to 0 only for the matching suspect quanti
 
 ## Citation
 If you would like to cite this work, please use:
-- Title: *Yes, That's Mine: Asymptotically Foolproof LLM Ownership Identification Against Hidden Adversarial Decoding Parameter Perturbations*
+- Title: *Provable Black-Box LLM Identification: Catching Provider-Side Model Theft, Tampering, and Degradation*
 - Author: Jerry Bao
 - DOI: https://doi.org/10.5281/zenodo.18127692
 - Year: 2026
