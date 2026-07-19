@@ -28,7 +28,7 @@ To our knowledge, this paper produces the first provable method of its kind for 
 
 **Outcome:** 
 
-The identification estimator converges to 0 only for the matching suspect model, clearly distinguishing it from the rest.
+The identification estimator converges to 0 only for the matching suspect model, clearly distinguishing it from the rest of the models.
 
 ### Fine-tune variants of the same model:
 ![](assets/selected_fine_tune_heatmap.png)
