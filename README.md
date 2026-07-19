@@ -23,7 +23,7 @@ For those who frequently use large language model (LLM) APIs, a common concern t
 
 ## Selected Figures:
 ### Scenario: The provider secretly re-routes to a different model
-![](assets/selected_model_routing_convergence.png)
+![](graphs/selected_model_routing_convergence.png)
 
 **Setup:**
 - Requested model config: Qwen2.5-7B-Instruct
@@ -35,7 +35,7 @@ For those who frequently use large language model (LLM) APIs, a common concern t
 The estimator converges to 0 only for the requested Qwen2.5-7B-Instruct model configuration, uniquely distinguishing its statistical profile from the unwanted re-routed alternatives.
 
 ### Scenario: The provider secretly modifies the system prompt
-![](assets/selected_prompt_injection_heatmap.png)
+![](graphs/selected_prompt_injection_heatmap.png)
 
 **Setup:**
 - 3 system prompt variants
@@ -46,7 +46,7 @@ The estimator converges to 0 only for the requested Qwen2.5-7B-Instruct model co
 The estimators converge to 0 only for the requested system prompt configurations (the diagonal squares), uniquely distinguishing their statistical profiles from the unwanted system prompt alternatives.
 
 ### Scenario: The provider secretly modifies logit quantization
-![](assets/selected_quantization_heatmap.png)
+![](graphs/selected_quantization_heatmap.png)
 
 **Setup:**
 - 3 logit quantization variants: bf16, 8bit, 4bit
@@ -57,7 +57,7 @@ The estimators converge to 0 only for the requested system prompt configurations
 The estimators converge to 0 only for the requested quantization configurations (the diagonal squares), uniquely distinguishing their statistical profiles from the unwanted quantization alternatives.
 
 ### Scenario: The provider secretly deploys a fine-tune variant of the model
-![](assets/selected_fine_tune_heatmap.png)
+![](graphs/selected_fine_tune_heatmap.png)
 
 **Setup:**
 - 3 fine-tune variants: Qwen2.5-14B-Instruct, Qwen2.5-14B-Instruct-1M, Qwen2.5-Coder-14B-Instruct
@@ -74,11 +74,12 @@ To see the current practical framing of the paper, please read the [Abstract (Dr
 
 Repo summary:
 - Refer to [PROOFS_AND_DERIVATIONS.pdf](PROOFS_AND_DERIVATIONS.pdf) purely for proofs, derivations, and theoretical results. The rest of it is now stale.
-- Refer to the [model_routing_experiment](model_routing_experiment/) folder for the *model re-routing scenario* experimental code and outputs. This folder is up-to-date.
-- Refer to the [prompt_injection_experiment](prompt_injection_experiment/) folder for the *prompt injection scenario* experimental code and outputs. This folder is up-to-date.
-- Refer to the [quantization_level_experiment](quantization_level_experiment/) folder for the *logit quantization scenario* experimental code and outputs. This folder is up-to-date.
-- Refer to the [fine_tune_experiment](fine_tune_experiment/) folder for the *fine tune deployment scenario* experimental code and outputs. This folder is up-to-date.
-- The [assets](assets/) folder stores all experimental outputs as png images. This folder is up-to-date.
+- Refer to the [experiments/model_routing_experiment](experiments/model_routing_experiment/) folder for the *model re-routing scenario* experimental code and outputs. This folder is up-to-date.
+- Refer to the [experiments/prompt_injection_experiment](experiments/prompt_injection_experiment/) folder for the *prompt injection scenario* experimental code and outputs. This folder is up-to-date.
+- Refer to the [experiments/quantization_level_experiment](experiments/quantization_level_experiment/) folder for the *logit quantization scenario* experimental code and outputs. This folder is up-to-date.
+- Refer to the [experiments/fine_tune_experiment](experiments/fine_tune_experiment/) folder for the *fine tune deployment scenario* experimental code and outputs. This folder is up-to-date.
+- The shared experiment helper modules live at [experiments/logit_helpers.py](experiments/logit_helpers.py) and [experiments/estimators.py](experiments/estimators.py).
+- The [graphs](graphs/) folder stores all experimental outputs as png images. This folder is up-to-date.
 
 ## Current Status
 - The core proofs and experimental results are complete.

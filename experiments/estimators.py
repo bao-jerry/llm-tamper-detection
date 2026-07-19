@@ -1,7 +1,7 @@
 """Estimator helpers for the empirical naive-method experiments.
 
 The formulas implemented here correspond to
-``model_routing_experiment/estimator_formula_audit.tex``.
+``experiments/model_routing_experiment/estimator_formula_audit.tex``.
 
 The expected logit dictionary keys are literal formula subscripts:
 

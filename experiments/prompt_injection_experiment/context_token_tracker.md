@@ -131,7 +131,7 @@ from the final prompt-search run.
 
 These are base probabilities with no additional decoding parameters applied.
 Values below were recomputed from the copied `.pt` payloads in
-`prompt_injection_experiment/logit_payloads`.
+`experiments/prompt_injection_experiment/logit_payloads`.
 
 | Variant | Prompt | File | P(token `0`, id 15) | P(token `1`, id 16) | P(0)+P(1) |
 |---|---:|---|---:|---:|---:|
