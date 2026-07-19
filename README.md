@@ -20,7 +20,7 @@ To our knowledge, this paper produces the first provable method of its kind for 
 This paper is undergoing active modifications prior to submission and peer review. Its presentation is therefore expected to change significantly.
 
 ## Selected Figures:
-### <u>LLMs with distinct base models</u>:
+### <h3><u>LLMs with distinct base models<h3><u>:
 ![](assets/selected_primary_convergence.png)
 
 Setup:
