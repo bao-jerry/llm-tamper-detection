@@ -16,8 +16,7 @@ To our knowledge, this paper produces the first provable method of its kind for 
 
 ## Current status
 - All proofs and experiments are complete. The core theoretical and empirical results are considered stable.
-- This paper will undergo significant rewriting and refactoring prior to submission and peer review.
-This paper is undergoing active modifications prior to submission and peer review. Its presentation is therefore expected to change significantly.
+- This paper will undergo significant rewriting and refactoring prior to submission and peer review. Its presentation is therefore expected to change significantly.
 
 ## Selected Figures:
 ### LLMs with distinct base models:
