@@ -28,7 +28,7 @@ To our knowledge, this paper produces the first provable method of its kind for 
 
 **Outcome:** 
 
-The identification estimator converges to 0 only for the matching suspect model, clearly distinguishing it from the rest of the models.
+The identification estimator converges to 0 only for the matching suspect model, uniquely distinguishing it from the rest of the models.
 
 ### Fine-tune variants of the same model:
 ![](assets/selected_fine_tune_heatmap.png)
@@ -39,7 +39,7 @@ The identification estimator converges to 0 only for the matching suspect model,
 
 **Outcome:** 
 
-The identification estimators converge to 0 only for the matching suspect fine-tune variants (the diagonal squares), clearly distinguishing them from the rest of the fine-tune variants.
+The identification estimators converge to 0 only for the matching suspect fine-tune variants (the diagonal squares), uniquely distinguishing them from the rest of the fine-tune variants.
 
 ### System prompt variants of the same model:
 ![](assets/selected_prompt_injection_heatmap.png)
@@ -50,7 +50,7 @@ The identification estimators converge to 0 only for the matching suspect fine-t
 
 **Outcome:** 
 
-The identification estimators converge to 0 only for the matching suspect system prompt variants (the diagonal squares), clearly distinguishing them from the rest of the system prompt variants.
+The identification estimators converge to 0 only for the matching suspect system prompt variants (the diagonal squares), uniquely distinguishing them from the rest of the system prompt variants.
 
 ### Quantization variants of the same model:
 ![](assets/selected_quantization_heatmap.png)
@@ -61,7 +61,7 @@ The identification estimators converge to 0 only for the matching suspect system
 
 **Outcome:** 
 
-The identification estimators converge to 0 only for the matching suspect quantization variants (the diagonal squares), clearly distinguishing them from the rest of the quantization variants.
+The identification estimators converge to 0 only for the matching suspect quantization variants (the diagonal squares), uniquely distinguishing them from the rest of the quantization variants.
 
 ## Repository Layout
 - `LLM_Ownership_Identification_Latex/`: LaTeX source for the current paper draft.
