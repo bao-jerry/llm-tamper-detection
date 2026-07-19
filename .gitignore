@@ -1,0 +1,14 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local/editor/cache artifacts
+scratch_notes.md
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
