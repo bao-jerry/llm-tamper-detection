@@ -27,7 +27,9 @@ This paper is undergoing active modifications prior to submission and peer revie
 - White-box reference model: Qwen2.5-7B-Instruct
 - 3 anonymous (black-box) suspect models: Qwen2.5-7B-Instruct, Qwen2.5-14B-Instruct, Qwen2.5-32B-Instruct
 
-**Outcome:** The identification estimator converges to 0 only for the matching suspect model, clearly distinguishing it from the others.
+**Outcome:** 
+
+The identification estimator converges to 0 only for the matching suspect model, clearly distinguishing it from the others.
 
 ### Fine-tune variants of the same model:
 ![](assets/selected_fine_tune_heatmap.png)
@@ -36,7 +38,9 @@ This paper is undergoing active modifications prior to submission and peer revie
 - 4 random decoding parameter configurations generated
 - 3 fine-tune variants: Qwen2.5-14B-Instruct, Qwen2.5-14B-Instruct-1M, Qwen2.5-Coder-14B-Instruct
 
-**Outcome:** The identification estimators converge to 0 only for the matching suspect fine-tune variants (the diagonal squares), clearly distinguishing them from the other fine-tune variants.
+**Outcome:** 
+
+The identification estimators converge to 0 only for the matching suspect fine-tune variants (the diagonal squares), clearly distinguishing them from the other fine-tune variants.
 
 ### System prompt variants of the same model:
 ![](assets/selected_prompt_injection_heatmap.png)
@@ -45,7 +49,9 @@ This paper is undergoing active modifications prior to submission and peer revie
 - 4 random decoding parameter configurations generated
 - 3 system prompt variants
 
-**Outcome:** The identification estimators converge to 0 only for the matching suspect system prompt variants (the diagonal squares), clearly distinguishing them from the other system prompt variants.
+**Outcome:** 
+
+The identification estimators converge to 0 only for the matching suspect system prompt variants (the diagonal squares), clearly distinguishing them from the other system prompt variants.
 
 ### Quantization variants of the same model:
 ![](assets/selected_quantization_heatmap.png)
@@ -54,7 +60,9 @@ This paper is undergoing active modifications prior to submission and peer revie
 - 4 random decoding parameter configurations generated
 - 3 logit quantization variants: bf16, 8bit, 4bit
 
-**Outcome:** The identification estimators converge to 0 only for the matching suspect quantization variants (the diagonal squares), clearly distinguishing them from the other quantization variants.
+**Outcome:** 
+
+The identification estimators converge to 0 only for the matching suspect quantization variants (the diagonal squares), clearly distinguishing them from the other quantization variants.
 
 ## Repository Layout
 - `LLM_Ownership_Identification_Latex/`: LaTeX source for the current paper draft.
