@@ -37,7 +37,7 @@ The target token pair is:
 
 ## Canary Prompts
 
-The quantization experiment reuses the 14B canaries from the primary
+The quantization experiment reuses the 14B canaries from the model re-routing
 experiment:
 
 | Context slot | Prompt |
@@ -56,14 +56,14 @@ The theoretical-limit heatmap notebook computes 8 total `3 x 3` grids:
 - 4 decoding conditions
 - 2 naive estimators
 
-Rows are reference load modes `A`; columns are suspect load modes `B`.
+Rows are requested load modes; columns are actual load modes.
 
 For each cell, the notebook computes the theoretical limit of Naive Method I
 and Naive Method II using:
 
 ```text
-A logits on the 14B canaries
-B decoding-altered probabilities on the same 14B canaries
+requested-load-mode logits on the 14B canaries
+actual-load-mode decoding-altered probabilities on the same 14B canaries
 ```
 
 Undefined cells are shown as `N/A` when the top-p cutoff removes one of the two

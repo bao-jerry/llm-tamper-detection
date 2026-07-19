@@ -1,11 +1,11 @@
 """Estimator helpers for the empirical naive-method experiments.
 
 The formulas implemented here correspond to
-``primary_experiment/estimator_formula_audit.tex``.
+``model_routing_experiment/estimator_formula_audit.tex``.
 
 The expected logit dictionary keys are literal formula subscripts:
 
-    z[(j, t)] = reference-model base logit z_{j,t}
+    z[(j, t)] = requested-configuration base logit z_{j,t}
 
 where ``j`` is the context slot in ``{1, 2, 4}`` and ``t`` is the token
 subscript in ``{0, 1}``. In the current experiment, token subscript ``0`` is
@@ -291,7 +291,7 @@ def naive_method_i_estimator(
     ----------
     z:
         Dictionary-like object keyed by ``(context_slot, token_subscript)``.
-        It must provide the owned/reference model logits:
+        It must provide the owned/requested model configuration logits:
         ``z[(1, 0)]``, ``z[(1, 1)]``, ``z[(2, 0)]``, ``z[(2, 1)]``,
         ``z[(4, 0)]``, and ``z[(4, 1)]``.
 
@@ -348,7 +348,7 @@ def naive_method_ii_estimator(
     ----------
     z:
         Dictionary-like object keyed by ``(context_slot, token_subscript)``.
-        It must provide the owned/reference model logits:
+        It must provide the owned/requested model configuration logits:
         ``z[(1, 0)]``, ``z[(1, 1)]``, ``z[(2, 0)]``, ``z[(2, 1)]``,
         ``z[(4, 0)]``, and ``z[(4, 1)]``.
 

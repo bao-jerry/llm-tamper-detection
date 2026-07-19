@@ -5,7 +5,7 @@ experiment for the Qwen2.5-14B same-model detection project.
 
 The experiment fixes the underlying checkpoint and loading mode, then changes
 only the prompt-formatting variant. This tests whether the estimator can flag an
-endpoint as non-identical when the provider silently injects or modifies hidden
+endpoint as non-identical when the provider silently injects or modifies actual
 prompting before the user context.
 
 ## Files

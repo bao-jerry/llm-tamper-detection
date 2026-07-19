@@ -92,7 +92,7 @@ Payload schema: `next_token_logits_float64_v1`
 
 The quantization experiment fixes the model identity as `Qwen/Qwen2.5-14B-Instruct` and varies only the loading/quantization mode.
 
-For comparability with the primary experiment, the same 14B canary prompts can be used:
+For comparability with the model re-routing experiment, the same 14B canary prompts can be used:
 
 - `C1 = prompt 1`
 - `C2 = C3 = prompt 4`
@@ -103,6 +103,6 @@ The theoretical-limit heatmap notebook computes 8 total `3 x 3` grids over the r
 - 4 decoding conditions
 - 2 naive estimators
 
-Each grid uses reference load mode as the row axis and suspect load mode as the column axis. Undefined cells caused by top-p removing one of the target tokens are shown as `N/A`.
+Each grid uses requested load mode as the row axis and actual load mode as the column axis. Undefined cells caused by top-p removing one of the target tokens are shown as `N/A`.
 
-Early qualitative read: `4bit` appears substantially shifted from both `bf16` and `8bit` on the primary 14B canaries, especially prompt 4 and prompt 5. This should make 4-bit quantization easy to detect in the neutral theoretical-limit check.
+Early qualitative read: `4bit` appears substantially shifted from both `bf16` and `8bit` on the model re-routing 14B canaries, especially prompt 4 and prompt 5. This should make 4-bit quantization easy to detect in the neutral theoretical-limit check.

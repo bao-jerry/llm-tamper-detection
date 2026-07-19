@@ -2,7 +2,7 @@
 
 ## Objective
 
-Test whether the estimator detects hidden prompt-injection / prompt-formatting
+Test whether the estimator detects actual prompt-injection / prompt-formatting
 changes as non-identical hosted implementations, even when the underlying model
 weights are the same.
 
@@ -26,7 +26,7 @@ Each entry should have:
 ```python
 "variant_key": {
     "label": "Short plot label",
-    "system_prompt": None,  # or a hidden prompt-injection string
+    "system_prompt": None,  # or a actual prompt-injection string
 }
 ```
 
@@ -39,7 +39,7 @@ payloads total:
 
 ## Canary Mapping
 
-Use the same 14B canary mapping as the primary experiment:
+Use the same 14B canary mapping as the model re-routing experiment:
 
 ```text
 C1 = prompt 1
@@ -52,12 +52,12 @@ C4 = prompt 5
 The heatmap notebook treats prompt-formatting variants as the compared
 implementations:
 
-- rows: reference prompt-formatting variant `A`
-- columns: suspect prompt-formatting variant `B`
+- rows: requested prompt-formatting variant `A`
+- columns: actual prompt-formatting variant `B`
 
 For each decoding condition and each naive estimator, compute a `3 x 3`
 matrix. The diagonal should be near zero whenever defined. Off-diagonal entries
-indicate that the hidden prompt wrapper changes the effective next-token
+indicate that the actual prompt wrapper changes the effective next-token
 distribution.
 
 ## Decoding Conditions

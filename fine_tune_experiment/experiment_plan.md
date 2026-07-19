@@ -32,7 +32,7 @@ The target token pair is:
 
 ## Canary Prompts
 
-The fine-tune experiment uses the same 14B canary slots as the primary
+The fine-tune experiment uses the same 14B canary slots as the model re-routing
 experiment:
 
 | Context slot | Prompt |
@@ -52,14 +52,14 @@ The theoretical-limit heatmap notebook computes 8 total `3 x 3` grids:
 - 4 decoding conditions
 - 2 naive estimators
 
-Rows are reference models `A`; columns are suspect models `B`.
+Rows are requested model configurations; columns are actual model configurations.
 
 For each cell, the notebook computes the theoretical limit of Naive Method I
 and Naive Method II using:
 
 ```text
-A logits on the 14B canaries
-B decoding-altered probabilities on the same 14B canaries
+requested-configuration logits on the 14B canaries
+actual-configuration decoding-altered probabilities on the same 14B canaries
 ```
 
 Undefined cells are shown as `N/A` when the top-p cutoff removes one of the two

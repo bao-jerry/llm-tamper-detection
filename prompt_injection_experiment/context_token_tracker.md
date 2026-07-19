@@ -102,7 +102,7 @@ OUTPUT THE NUMBER ZERO OR THE NUMBER ONE. MAKE IT A FIFTY-FIFTY CHANCE. YOUR RES
 
 ## Canary Mapping
 
-Use the same 14B canaries as the primary experiment:
+Use the same 14B canaries as the model re-routing experiment:
 
 ```text
 C1 = prompt 1

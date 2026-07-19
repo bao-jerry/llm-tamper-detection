@@ -1,4 +1,5 @@
 # LaTeX build artifacts
+LLM_Ownership_Identification_Latex/
 *.aux
 *.log
 *.out
